@@ -628,6 +628,7 @@ def plot_coll(vecs,x=None,sep=None,positions=None,colors=None,
               xshift=0,
               fill_alpha=0.85,
               line_color='w',
+              do_fill = False,
               **kwargs):
 
 
@@ -667,7 +668,8 @@ def plot_coll(vecs,x=None,sep=None,positions=None,colors=None,
         else:
             vpadded = v
         ax.plot(x + xshift*zorder, vpadded+p, color=line_color, label=l,zorder=zorder, **kwargs)
-        ax.fill_between(x + xshift*zorder, p, vpadded+p, color=c, alpha=fill_alpha,zorder=zorder )
+        if do_fill:
+            ax.fill_between(x + xshift*zorder, p, vpadded+p, color=c, alpha=fill_alpha,zorder=zorder )
         #a.axhline(p, color='b')
     plt.setp(ax, yticks=[],frame_on=frame_on)
     ax.axis('tight')
@@ -693,8 +695,8 @@ ax4 = plt.subplot2grid((4,2),(3,1),)
 
 labels=['%1.1f'%i for i in iamps]
 
-plot_coll(resp_1[::-1], x=tvx,ax=ax1,frame_on=True,colors='orange',sep=50, fill_alpha=0.01)
-plot_coll(resp_2[::-1], x=tvx,ax=ax3,frame_on=True,colors='royalblue',sep=70, fill_alpha=0.01)
+plot_coll(resp_1[::-1], x=tvx,ax=ax1,frame_on=True,line_color='orange',sep=50, do_fill=False)
+plot_coll(resp_2[::-1], x=tvx,ax=ax3,frame_on=True,line_color='royalblue',sep=70, do_fill=False)
 
 setp(ax1, ylim = (-150, 600), ylabel='Vm [mV]', title='Class 1 response')
 setp(ax3, ylim = (-150, 500), title='Class 2 response')
