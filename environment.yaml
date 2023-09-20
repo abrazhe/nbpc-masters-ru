@@ -1,20 +1,5 @@
 channels:
    - conda-forge
 dependencies:
-   - python=3.10
-   - ipywidgets
-   - jupyterlab
-   - jupytext
-   - h5py
-   - matplotlib
-   - numba
-   - numpy
-   - pandas
-   - pip
-   - scikit-learn
-   - scipy
-   - tqdm
-   - widgetsnbextension
-   - seaborn
    - brian2
 
