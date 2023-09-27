@@ -4,7 +4,7 @@ __pycache__/
 *$py.class
 
 # Jupyter notebooks
-*.ipynb
+#*.ipynb
 
 
 # C extensions
