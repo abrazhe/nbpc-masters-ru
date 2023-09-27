@@ -6,7 +6,7 @@ jupyter:
       extension: .md
       format_name: markdown
       format_version: '1.3'
-      jupytext_version: 1.15.2
+      jupytext_version: 1.14.5
   kernelspec:
     display_name: Python 3 (ipykernel)
     language: python
@@ -19,6 +19,18 @@ jupyter:
 <!-- #endregion -->
 
 All Brian scripts start with the following. If you're trying this notebook out in the Jupyter notebook, you should start by running this cell.
+
+```python
+#! pip install brian2
+```
+
+```python
+#! pip install pandas
+```
+
+```python
+#!wget https://raw.githubusercontent.com/abrazhe/nbpc-masters-ru/master/notebooks/input_factory.py
+```
 
 ```python
 from brian2 import *
