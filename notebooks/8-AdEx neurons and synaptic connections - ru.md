@@ -20,6 +20,19 @@ jupyter:
 В этом ноутбуке (электронной рабочей тетради) мы научимся задавать в `Brian2` модели AdEX нейронов и синаптические контакты между ними. Настоятельно рекомендуется заглянуть в документацию по `Brian2` и в книгу W.Gerstner et al "Neuronal Dynamics". 
 <!-- #endregion -->
 
+
+```python
+#! pip install brian2
+```
+
+```python
+#! pip install pandas
+```
+
+```python
+#!wget https://raw.githubusercontent.com/abrazhe/nbpc-masters-ru/master/notebooks/input_factory.py
+```
+
 ```python
 %pylab inline
 ```

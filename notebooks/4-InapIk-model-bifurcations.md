@@ -13,7 +13,22 @@ jupyter:
     name: python3
 ---
 
+
+
 # Bifurcations in the Ina,p+Ik model
+
+```python
+#! pip install brian2
+```
+
+```python
+#! pip install pandas
+```
+
+```python
+#!wget https://raw.githubusercontent.com/abrazhe/nbpc-masters-ru/master/notebooks/input_factory.py
+#!wget https://raw.githubusercontent.com/abrazhe/nbpc-masters-ru/master/notebooks/Rothman-Manis-2003-table1.csv
+```
 
 ```python
 %pylab inline

@@ -23,6 +23,18 @@ If you haven't yet read part 1: Neurons, go read that now.
 As before we start by importing the Brian package and setting up matplotlib for IPython:
 
 ```python
+#! pip install brian2
+```
+
+```python
+#! pip install pandas
+```
+
+```python
+#!wget https://raw.githubusercontent.com/abrazhe/nbpc-masters-ru/master/notebooks/input_factory.py
+```
+
+```python
 from brian2 import *
 %matplotlib inline
 ```
