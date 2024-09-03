@@ -14,16 +14,11 @@ jupyter:
 ---
 
 ```python
-#! pip install brian2
-```
-
-```python
-#! pip install pandas
-```
-
-```python
-#!wget https://raw.githubusercontent.com/abrazhe/nbpc-masters-ru/master/notebooks/input_factory.py
-#!wget https://raw.githubusercontent.com/abrazhe/nbpc-masters-ru/master/notebooks/Rothman-Manis-2003-table1.csv
+# check if notebook is running in Colab and install packages if it is
+if RunningInCOLAB:
+  ! pip install brian2
+  ! pip install pandas
+  !wget https://raw.githubusercontent.com/abrazhe/nbpc-masters-ru/master/notebooks/input_factory.py
 ```
 
 ```python

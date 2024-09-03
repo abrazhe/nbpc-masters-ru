@@ -18,16 +18,16 @@ jupyter:
 
 
 ```python
-#! pip install brian2
+# check if notebook is running in Colab and install packages if it is
+if RunningInCOLAB:
+  ! pip install brian2
+  ! pip install pandas
+  ! wget https://raw.githubusercontent.com/abrazhe/nbpc-masters-ru/master/notebooks/input_factory.py
+  ! wget https://raw.githubusercontent.com/abrazhe/nbpc-masters-ru/master/notebooks/adex_params.csv
+
 ```
 
-```python
-#! pip install pandas
-```
 
-```python
-#!wget https://raw.githubusercontent.com/abrazhe/nbpc-masters-ru/master/notebooks/input_factory.py
-```
 
 ```python
 %pylab inline
