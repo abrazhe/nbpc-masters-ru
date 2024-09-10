@@ -19,6 +19,8 @@ jupyter:
 
 ```python
 # check if notebook is running in Colab and install packages if it is
+RunningInCOLAB = 'google.colab' in str(get_ipython())
+
 if RunningInCOLAB:
   ! pip install brian2
   ! pip install pandas
